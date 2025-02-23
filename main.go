@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/jboursiquot/go-proverbs"
+	"github.com/tlylt/golib"
 )
 
 const location = "Remote"
@@ -25,4 +26,7 @@ func main() {
 	fmt.Printf("By the time %d o'clock EST comes around, we'll know how to code in Go!\\n", n)
 	fmt.Printf("Here's a Go proverb: %s\n", proverb)
 	fmt.Println("Let's get started!")
+
+	result := golib.Add(1, 2)
+	fmt.Println("1 + 2 =", result)
 }
